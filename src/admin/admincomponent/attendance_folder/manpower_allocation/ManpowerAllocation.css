@@ -1,0 +1,52 @@
+/* ManpowerAllocation.css */
+
+/* Custom dropdown styles */
+.custom-dropdown {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.checkbox-label input {
+  margin-right: 8px;
+}
+
+.custom-dropdown .dropdown-header {
+  font-weight: bold;
+}
+
+.custom-dropdown .dropdown-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.custom-dropdown .checkbox-label span {
+  font-weight: normal; 
+  margin-left: 10px; 
+}
+
+.popup-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.popup-success {
+  background-color: #28a745;
+}
+
+.popup-error {
+  background-color: #dc3545;
+}

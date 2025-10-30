@@ -1,0 +1,192 @@
+.e-tender-filter-options {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin-left: 40px;
+}
+
+.e-tender-heading p {
+  text-align: center;
+}
+
+.etender-input-field {
+  display: flex;
+  width: 800px;
+}
+
+.etender-input-field input {
+  padding: 8px;
+  width: 600px;
+  border: none;
+  margin-left: 40px;
+}
+
+.e-tender-table-content {
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.E-tender-fopDivContainer {
+  position: relative;
+  background-color: white;
+  display: grid;
+  font-family: "Noto Sans";
+  font-size: 15px;
+  /* grid-template-columns: 80px 2fr 1fr 2fr 1.3fr 1fr 70px; */
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  width: 100%;
+  /* padding: 13px; */
+  padding: 15px 40px;
+  margin-top: 20px;
+
+  box-sizing: border-box;
+}
+
+.E-tender-fopDivContainer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f6f7f9;
+  border-left: 20px solid #f6f7f9;
+}
+
+.E-tender-fopDivContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #f6f7f9;
+  border-right: 20px solid #f6f7f9;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.E-tender-fopDivContainer:hover {
+  cursor: pointer;
+  color: #886cc0;
+}
+
+.E-tender-fopDivContainer {
+  transition: color 0.3s ease-in-out;
+}
+
+.E-tender-fopDivContainer.hovered {
+  cursor: pointer;
+  color: #886cc0;
+}
+
+.E-tender-fopTableHeader {
+  background-color: #886cc0;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  align-items: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-columns: 80px 2fr 1.5fr 2fr 1.5fr 1fr 70px; */
+  padding: 15px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.E-tender-fopTableHeader::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #f6f7f9;
+  border-left: 15px solid #f6f7f9;
+}
+
+.E-tender-fopTableHeader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #f6f7f9;
+  border-right: 15px solid #f6f7f9;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.table2 {
+  width: 89vw;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 15px;
+  border-collapse: collapse;
+}
+
+.e-tender-search-field {
+  display: flex;
+  justify-content: center;
+}
+
+.e-tender-search-field input {
+  width: 390px;
+  flex-shrink: 0;
+  padding: 8px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  background-color: transparent;
+  /* background-image: url("../../asserts/Athlete/searchInput.png"); */
+}
+
+.e-tender-search-field img {
+  background: linear-gradient(to right, white 70%, transparent 70%);
+}
+
+@media screen and (max-width: 870px) {
+  .table2 {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .e-tender-filter-options {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .sortBy-e-tender {
+    position: static;
+  }
+  .table2 {
+    width: 80vw;
+  }
+  .e-tender-table-content {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .e-tender-search-field input {
+    width: 200px;
+  }
+}

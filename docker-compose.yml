@@ -1,0 +1,17 @@
+version: '3.8'
+#Accredatation Uat App Service
+services:
+  aac_accredatation_frontend_uat :
+    image: 369528189875.dkr.ecr.ap-south-1.amazonaws.com/aac_accredatation_frontend_uat:latest
+    container_name: aac_accredatation_frontend_uat
+    working_dir: /app
+    ports:
+      - "5004:4008"
+    restart: unless-stopped
+    networks:
+      - acc_network
+
+networks:
+  acc_network:
+    driver: bridge
+

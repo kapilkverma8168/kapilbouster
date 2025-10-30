@@ -1,0 +1,103 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Container styles */
+  .public-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  
+  /* Banner image styles */
+  .banner-image {
+    width: 100%;
+    height: 270px;
+    display: block;
+    /* max-height: 180px; */
+    object-fit: contain;
+  }
+  
+  /* Form section styles */
+  .form-section {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .banner-image {
+    max-width: 1200px; /* Match form max-width */
+    width: 100%;
+  }
+  
+  /* Responsive breakpoints */
+  @media screen and (min-width: 820px) {
+    .public-registration {
+      padding: 0 40px;
+    }
+    
+    .banner-image {
+      max-width: 1200px; /* Match form max-width */
+      width: 100%;
+    }
+  }
+  
+  /* Additional fine-tuning for larger screens */
+  @media screen and (min-width: 1280px) {
+    .public-registration {
+      padding: 0 60px;
+    }
+  }
+
+
+  /* Base container styles */
+.public-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  
+  /* Banner/strip styles */
+  .banner-image {
+    width: 100%;
+    height: auto;
+    /* max-height: 180px; */
+    object-fit: contain;
+  }
+  
+  /* Form width control */
+  .form-section {
+    width: 100%;
+    max-width: 80vw; /* Matches the minWidth: "80vw" from your ManualForm */
+    margin: 0 auto;
+  }
+  .banner-image {
+    width: 80vw; /* Match form width at larger screens */
+  }
+  /* Responsive adjustments */
+  @media screen and (min-width: 860px) {
+    .banner-image {
+      width: 80vw; /* Match form width at larger screens */
+    }
+    
+    .public-registration {
+      padding: 0;
+    }
+  }
+
+
+
+  

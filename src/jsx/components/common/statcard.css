@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Paris2024";
+  src: url("../../../../public/fonts/Paris2024-Variable.ttf") format("truetype");
+  font-weight: 550;
+  font-style: normal;
+  font-display: swap;
+}
+
+.stat-card {
+  display: flex;
+  height: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+}
+
+.stat-card .card-body {
+  width: 100%;
+}
+
+.stat-card__title {
+  color: #4B5563;
+  font-family: Paris2024, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 120%;
+}
+
+.stat-card__value {
+  color: #09090B;
+  font-family: Paris2024, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 120%;
+}
+

@@ -1,0 +1,181 @@
+.custom-dropdown {
+  position: relative;
+  /* width: 300px; */
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-header {
+  border: 1px solid #007bff;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f0f8ff;
+  border-radius: 6px;
+  color: #007bff;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-header:hover {
+  background-color: #e7f3ff;
+}
+
+.dropdown-body {
+  position: absolute;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: -webkit-fill-available;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-bar {
+  padding: 10px;
+  background-color: #e7f3ff;
+  border-bottom: 1px solid #007bff;
+}
+
+.filter-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  outline: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.filter-bar input::placeholder {
+  color: #6c757d;
+}
+
+.dropdown-list {
+  padding: 10px;
+}
+
+.dropdown-group {
+  margin-bottom: 10px;
+}
+
+.group-header {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  /* color: #007bff; */
+}
+
+.group-header input {
+  accent-color: #007bff;
+}
+.group-items {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.group-header:hover {
+  background-color: #e9f5ff;
+}
+
+.group-items {
+  margin-left: 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.dropdown-item input {
+  accent-color: #007bff;
+  margin-right: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Add a hover effect */
+}
+
+.dropdown-input {
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  color: #007bff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-input:focus {
+  outline: none;
+  background-color: #e7f3ff;
+}
+
+.filter-bar {
+  padding: 10px;
+  background-color: #e7f3ff;
+  border-bottom: 1px solid #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-bar input {
+  width: calc(100% - 110px);
+  padding: 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  outline: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.filter-bar input::placeholder {
+  color: #6c757d;
+}
+
+.select-all-btn {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.select-all-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.select-all-btn:active {
+  background-color: #003f8f;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Add some spacing between the checkbox and text */
+  width: 100%; /* Make it clickable across the full width */
+}
+
+.checkbox-label input {
+  margin-right: 8px; /* Adjust the gap between checkbox and label */
+}
